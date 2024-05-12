@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e7050560;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+header li {
+    display: inline-block;
+}
+
+#branding {
+    background-color: #fc0101;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+#branding h1 {
+    font-size: 2.5rem;
+}
+
+#home {
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random/1600x900/?perfume,fragrance');
+    background-size: cover;
+    background-position: center;
+    color: #f4fff5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: background-position 0.5s ease; /* Add a transition effect to the background-position property */
+}
+
+#home:hover {
+    background-position: center bottom; /* Change the background position when the user hovers over the element */
+}
+
+#home button {
+    background-color: #333;
+    color: #fff;
+    border: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 9px 9px rgb(90, 89, 89);
+}
+
+#about, #products, #contact {
+    padding: 3rem;
+}
+
+#about h2, #products h2, #contact h2 {
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Products {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    flex-basis: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(165, 40, 40, 0.404);
+}
+
+.Products img {
+    width: 100%;
+    height: auto;
+}
+
+.Products :hover{
+    cursor: pointer;
+    transition: 1.0S;
+    scale: 1.1;
+    padding: 1px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #f7030300;
+    color: #fff;
+    border: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ff0000d2;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 6%;
+    width: 100%;
+}
+.onclik button{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+button {
+    background-color: #00000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    scale: 1.0;
+    box-shadow: 2px 2px 2px 2px rgb(255, 254, 254);
+  }
+  
+  button:hover {
+    background-color: #000000;
+    scale: 1.0;
+  }
+
+  nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff0000;
+    transform: scale(0.75);
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+branding {
+    background-color: #ff9999; /* Change the background color to a light pink */
+    padding: 20px; /* Add some padding around the section */
+    text-align: center; /* Center the text */
+}
+
+#branding h1 {
+    color: #333; /* Change the text color to a dark gray */
+    font-size: 2.5em; /* Increase the font size of the h1 element */
+    margin: 0; /* Remove the top margin to align it with the section background */
+}
+
+.img-home {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    width: 800px;
+    height: 500px;
+    transition: all 400ms;
+}
+
+.img-home :hover{
+    filter: grayscale(100%) opacity(24%);
+}
